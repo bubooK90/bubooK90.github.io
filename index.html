@@ -36,13 +36,13 @@
                   <a class="nav-link" href="#">概 览</a>
               </li>
               <li class="nav-item me-3">
-                  <a class="nav-link" href="#">操作与显示</a>
+                  <a class="nav-link" href="#op">操作与显示</a>
               </li>
               <li class="nav-item me-3">
-                  <a class="nav-link" href="#">组织音乐</a>
+                  <a class="nav-link" href="#fd">如何组织音乐</a>
               </li>
               <li class="nav-item me-3">
-                  <a class="nav-link" href="#">技术规格</a>
+                  <a class="nav-link" href="#sp">技术规格</a>
               </li>
           </ul>
           <form class="d-flex">
@@ -53,12 +53,14 @@
 </div>
     
   </header>
-  <main>
+  <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
     <div class="container pt-5 text-center" style="min-height:400px;letter-spacing:2px;">
       <h1 class="display-6 mt-5">buboo K90 蓝牙音乐播放器</h1>
       <p class="fs-4 fw-light">你的蓝牙音箱和耳机的绝美拍档</p>
       <p class="fs-6 fw-light">使用SD卡或通过SD卡套使用Micro SD卡无线播放音乐</p>
-      <div class="bg-light" style="height:300px;"></div>
+      <div>
+        <img src="images/body.png" width="100%" />
+      </div>
     </div>
     <div class="container-fluid bg-dark" style="min-height:400px;">
       <div class="container pt-5 text-center">
@@ -72,7 +74,9 @@
       <h1 class="display-6 mt-5">定制大屏 尽显沉稳</h1>
       <p class="fs-4 fw-light">2.42寸128x64明黄色OLED单色液晶显示屏</br>全视角 无背光 清澈到底</p>
       <p class="fs-6 fw-light">30秒钟无操作进入息屏模式 触摸任意按键或转动旋钮恢复显示</p>
-      <div class="bg-light" style="height:300px;"></div>
+      <div>
+        <img src="images/screen.png" width="100%" />
+      </div>
     </div>
     <div class="container-fluid bg-dark" style="min-height:400px;">
       <div class="container pt-5 text-center">
@@ -82,16 +86,109 @@
       <div class="bg-light" style="height:300px;"></div>
       </div>
     </div>
-    <div class="container pt-5 text-center" style="min-height:400px;letter-spacing:2px;">
+    <div id="op" class="container pt-5 text-center" style="min-height:400px;letter-spacing:2px;">
       <h1 class="display-6 mt-5">操作与显示</h1>
-      <div class="bg-light" style="height:300px;"></div>
-    </div>
-    <div class="container-fluid bg-dark" style="min-height:400px;">
-      <div class="container pt-5 text-center">
-        <h1 class="display-6 text-white mt-5">如何组织音乐</h1>
-      <p class="fs-4 fw-light text-white">支持最多100个专辑或播放列表 每个里最多有100首曲目</p>
-      <div class="bg-light" style="height:300px;"></div>
+      <p class="fs-6 fw-light">请确认你的蓝牙音箱或耳机已经打开，且没有其它蓝牙播放设备（例如手机）与其连接</br>
+     将SD卡或者使用SD卡套的Micro SD卡插入机身背后的SD卡槽</br>
+      播放器将自动寻找周围的蓝牙音响或耳机，尝试与其连接并播放曲目</p>
+      <div>
+        <img src="images/op.png" width="100%" />
       </div>
+    </div>
+    <div id="fd" class="container-fluid bg-dark">
+      <div class="container py-5 text-center">
+        <h1 class="display-6 text-white mt-5">如何组织音乐</h1>
+      <p class="fs-4 fw-light text-white">支持最大容量为32G的SD卡或Micro SD卡</br>支持最多100个专辑或播放列表 每个里最多有100首曲目</p>
+      <p class="fs-6 fw-light text-white">在SD卡的根目录下，创建代表专辑或播放列表的文件夹</br>
+      并将曲目拷贝到对应的专辑或播放列表中</br>
+      如果希望按照一定的顺序播放 请在专辑/播放列表、曲目的文件名前加上序号</p>
+      <table class="table table-dark table-borderless w-75 mx-auto border-0 my-5 fs-6 fw-light">
+        <tr><td class="w-25 text-end pe-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="#e5e5e5" viewBox="0 0 576 512"><path d="M572.6 270.3l-96 192C471.2 473.2 460.1 480 447.1 480H64c-35.35 0-64-28.66-64-64V96c0-35.34 28.65-64 64-64h117.5c16.97 0 33.25 6.742 45.26 18.75L275.9 96H416c35.35 0 64 28.66 64 64v32h-48V160c0-8.824-7.178-16-16-16H256L192.8 84.69C189.8 81.66 185.8 80 181.5 80H64C55.18 80 48 87.18 48 96v288l71.16-142.3C124.6 230.8 135.7 224 147.8 224h396.2C567.7 224 583.2 249 572.6 270.3z"/></svg>
+        </td><td class="text-start">
+          01 Lorem ipsum dolor sit amet
+        </td></tr>
+        <tr><td class="w-25 text-end">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" fill="#e5e5e5" viewBox="0 0 384 512"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM171.5 259.5L136 296H92C85.38 296 80 301.4 80 308v56C80 370.7 85.38 376 92 376H136l35.5 36.5C179.1 420 192 414.8 192 404v-136C192 257.3 179.1 251.9 171.5 259.5zM235.1 260.7c-6.25 6.25-6.25 16.38 0 22.62C235.3 283.5 256 305.1 256 336c0 30.94-20.77 52.53-20.91 52.69c-6.25 6.25-6.25 16.38 0 22.62C238.2 414.4 242.3 416 246.4 416s8.188-1.562 11.31-4.688C258.1 410.1 288 380.5 288 336s-29.05-74.06-30.28-75.31C251.5 254.4 241.3 254.4 235.1 260.7z"/></svg>
+        </td><td class="text-start ps-4 fw-lighter">
+          01 In imperdiet mollis turpis quis elementum.wav
+        </td></tr>
+        <tr><td class="w-25 text-end">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" fill="#e5e5e5" viewBox="0 0 384 512"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM171.5 259.5L136 296H92C85.38 296 80 301.4 80 308v56C80 370.7 85.38 376 92 376H136l35.5 36.5C179.1 420 192 414.8 192 404v-136C192 257.3 179.1 251.9 171.5 259.5zM235.1 260.7c-6.25 6.25-6.25 16.38 0 22.62C235.3 283.5 256 305.1 256 336c0 30.94-20.77 52.53-20.91 52.69c-6.25 6.25-6.25 16.38 0 22.62C238.2 414.4 242.3 416 246.4 416s8.188-1.562 11.31-4.688C258.1 410.1 288 380.5 288 336s-29.05-74.06-30.28-75.31C251.5 254.4 241.3 254.4 235.1 260.7z"/></svg>
+        </td><td class="text-start ps-4 fw-lighter">
+          02 Etiam lacinia sodales sollicitudin.wav
+        </td></tr>
+        <tr><td class="w-25 text-end">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" fill="#e5e5e5" viewBox="0 0 384 512"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM171.5 259.5L136 296H92C85.38 296 80 301.4 80 308v56C80 370.7 85.38 376 92 376H136l35.5 36.5C179.1 420 192 414.8 192 404v-136C192 257.3 179.1 251.9 171.5 259.5zM235.1 260.7c-6.25 6.25-6.25 16.38 0 22.62C235.3 283.5 256 305.1 256 336c0 30.94-20.77 52.53-20.91 52.69c-6.25 6.25-6.25 16.38 0 22.62C238.2 414.4 242.3 416 246.4 416s8.188-1.562 11.31-4.688C258.1 410.1 288 380.5 288 336s-29.05-74.06-30.28-75.31C251.5 254.4 241.3 254.4 235.1 260.7z"/></svg>
+        </td><td class="text-start ps-4 fw-lighter">
+          03 Curabitur sodales est metus.wav
+        </td></tr>
+        <tr><td class="w-25 text-end pe-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="#e5e5e5" viewBox="0 0 576 512"><path d="M572.6 270.3l-96 192C471.2 473.2 460.1 480 447.1 480H64c-35.35 0-64-28.66-64-64V96c0-35.34 28.65-64 64-64h117.5c16.97 0 33.25 6.742 45.26 18.75L275.9 96H416c35.35 0 64 28.66 64 64v32h-48V160c0-8.824-7.178-16-16-16H256L192.8 84.69C189.8 81.66 185.8 80 181.5 80H64C55.18 80 48 87.18 48 96v288l71.16-142.3C124.6 230.8 135.7 224 147.8 224h396.2C567.7 224 583.2 249 572.6 270.3z"/></svg>
+        </td><td class="text-start">
+          02 Consectetur adipiscing elit
+        </td></tr>
+        <tr><td class="w-25 text-end">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" fill="#e5e5e5" viewBox="0 0 384 512"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM171.5 259.5L136 296H92C85.38 296 80 301.4 80 308v56C80 370.7 85.38 376 92 376H136l35.5 36.5C179.1 420 192 414.8 192 404v-136C192 257.3 179.1 251.9 171.5 259.5zM235.1 260.7c-6.25 6.25-6.25 16.38 0 22.62C235.3 283.5 256 305.1 256 336c0 30.94-20.77 52.53-20.91 52.69c-6.25 6.25-6.25 16.38 0 22.62C238.2 414.4 242.3 416 246.4 416s8.188-1.562 11.31-4.688C258.1 410.1 288 380.5 288 336s-29.05-74.06-30.28-75.31C251.5 254.4 241.3 254.4 235.1 260.7z"/></svg>
+        </td><td class="text-start ps-4 fw-lighter">
+          01 Duis et aliquam mauris.flac
+        </td></tr>
+        <tr><td class="w-25 text-end">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" fill="#e5e5e5" viewBox="0 0 384 512"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM171.5 259.5L136 296H92C85.38 296 80 301.4 80 308v56C80 370.7 85.38 376 92 376H136l35.5 36.5C179.1 420 192 414.8 192 404v-136C192 257.3 179.1 251.9 171.5 259.5zM235.1 260.7c-6.25 6.25-6.25 16.38 0 22.62C235.3 283.5 256 305.1 256 336c0 30.94-20.77 52.53-20.91 52.69c-6.25 6.25-6.25 16.38 0 22.62C238.2 414.4 242.3 416 246.4 416s8.188-1.562 11.31-4.688C258.1 410.1 288 380.5 288 336s-29.05-74.06-30.28-75.31C251.5 254.4 241.3 254.4 235.1 260.7z"/></svg>
+        </td><td class="text-start ps-4 fw-lighter">
+          02 Aliquam euismod vitae justo ut auctor.mp3
+        </td></tr>
+        <tr><td class="w-25 text-end">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" fill="#e5e5e5" viewBox="0 0 384 512"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM171.5 259.5L136 296H92C85.38 296 80 301.4 80 308v56C80 370.7 85.38 376 92 376H136l35.5 36.5C179.1 420 192 414.8 192 404v-136C192 257.3 179.1 251.9 171.5 259.5zM235.1 260.7c-6.25 6.25-6.25 16.38 0 22.62C235.3 283.5 256 305.1 256 336c0 30.94-20.77 52.53-20.91 52.69c-6.25 6.25-6.25 16.38 0 22.62C238.2 414.4 242.3 416 246.4 416s8.188-1.562 11.31-4.688C258.1 410.1 288 380.5 288 336s-29.05-74.06-30.28-75.31C251.5 254.4 241.3 254.4 235.1 260.7z"/></svg>
+        </td><td class="text-start ps-4 fw-lighter">
+          03 Phasellus euismod feugiat nunc vitae egestas.mp3
+        </td></tr>
+        <tr><td class="w-25 text-end pe-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="#e5e5e5" viewBox="0 0 576 512"><path d="M572.6 270.3l-96 192C471.2 473.2 460.1 480 447.1 480H64c-35.35 0-64-28.66-64-64V96c0-35.34 28.65-64 64-64h117.5c16.97 0 33.25 6.742 45.26 18.75L275.9 96H416c35.35 0 64 28.66 64 64v32h-48V160c0-8.824-7.178-16-16-16H256L192.8 84.69C189.8 81.66 185.8 80 181.5 80H64C55.18 80 48 87.18 48 96v288l71.16-142.3C124.6 230.8 135.7 224 147.8 224h396.2C567.7 224 583.2 249 572.6 270.3z"/></svg>
+        </td><td class="text-start">
+          03 Morbi sit amet metus tortor
+        </td></tr>
+        <tr><td class="w-25 text-end">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" fill="#e5e5e5" viewBox="0 0 384 512"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM171.5 259.5L136 296H92C85.38 296 80 301.4 80 308v56C80 370.7 85.38 376 92 376H136l35.5 36.5C179.1 420 192 414.8 192 404v-136C192 257.3 179.1 251.9 171.5 259.5zM235.1 260.7c-6.25 6.25-6.25 16.38 0 22.62C235.3 283.5 256 305.1 256 336c0 30.94-20.77 52.53-20.91 52.69c-6.25 6.25-6.25 16.38 0 22.62C238.2 414.4 242.3 416 246.4 416s8.188-1.562 11.31-4.688C258.1 410.1 288 380.5 288 336s-29.05-74.06-30.28-75.31C251.5 254.4 241.3 254.4 235.1 260.7z"/></svg>
+        </td><td class="text-start ps-4 fw-lighter">
+          01 Curabitur sit amet commodo neque.flac
+        </td></tr>
+        <tr><td class="w-25 text-end">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" fill="#e5e5e5" viewBox="0 0 384 512"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM171.5 259.5L136 296H92C85.38 296 80 301.4 80 308v56C80 370.7 85.38 376 92 376H136l35.5 36.5C179.1 420 192 414.8 192 404v-136C192 257.3 179.1 251.9 171.5 259.5zM235.1 260.7c-6.25 6.25-6.25 16.38 0 22.62C235.3 283.5 256 305.1 256 336c0 30.94-20.77 52.53-20.91 52.69c-6.25 6.25-6.25 16.38 0 22.62C238.2 414.4 242.3 416 246.4 416s8.188-1.562 11.31-4.688C258.1 410.1 288 380.5 288 336s-29.05-74.06-30.28-75.31C251.5 254.4 241.3 254.4 235.1 260.7z"/></svg>
+        </td><td class="text-start ps-4 fw-lighter">
+          02 Donec ultricies mi vel tellus mattis rhoncus.flac
+        </td></tr>
+        <tr><td class="w-25 text-end">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" fill="#e5e5e5" viewBox="0 0 384 512"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM171.5 259.5L136 296H92C85.38 296 80 301.4 80 308v56C80 370.7 85.38 376 92 376H136l35.5 36.5C179.1 420 192 414.8 192 404v-136C192 257.3 179.1 251.9 171.5 259.5zM235.1 260.7c-6.25 6.25-6.25 16.38 0 22.62C235.3 283.5 256 305.1 256 336c0 30.94-20.77 52.53-20.91 52.69c-6.25 6.25-6.25 16.38 0 22.62C238.2 414.4 242.3 416 246.4 416s8.188-1.562 11.31-4.688C258.1 410.1 288 380.5 288 336s-29.05-74.06-30.28-75.31C251.5 254.4 241.3 254.4 235.1 260.7z"/></svg>
+        </td><td class="text-start ps-4 fw-lighter">
+          03 Curabitur convallis dapibus varius.flac
+        </td></tr>
+        <tr><td></td><td class="text-start ps-4">...</td></tr>
+      </table>
+      </div>
+    </div>
+    <div id="sp" class="container pt-5 text-center" style="min-height:400px;letter-spacing:2px;">
+      <h1 class="display-6 mt-5">技术规格</h1>
+      <p class="fs-4">buboo K90 产品参数</p>
+      <table class="table fs-6 my-5 w-100 mx-auto align-middle">
+        <tr><td scope="row" class="text-end pe-5" width="40%">尺寸</td><td class="text-start fw-light">270x90x30mm (不包含旋钮和脚垫高度)</td></tr>
+        <tr><td scope="row" class="text-end pe-5">重量</td><td class="text-start fw-light">约 900 克</td></tr>
+        <tr><td scope="row" class="text-end pe-5">屏幕</td><td class="text-start fw-light">2.42寸128x64明黄色OLED自发光液晶显示屏</td></tr>
+        <tr><td scope="row" class="text-end pe-5">存储</td><td class="text-start fw-light">外置SD/Micro SD卡 最高可支持32G</td></tr>
+        <tr><td scope="row" class="text-end pe-5">音频格式</td><td class="text-start fw-light">MP3 WAV FLAC AAC *</td></tr>
+        <tr><td scope="row" class="text-end pe-5">声道</td><td class="text-start fw-light">立体声/联合立体声</td></tr>
+        <tr><td scope="row" class="text-end pe-5">采样速率</td><td class="text-start fw-light">44.100kHz</td></tr>
+        <tr><td scope="row" class="text-end pe-5">采样大小</td><td class="text-start fw-light">16位</td></tr>
+        <tr><td scope="row" class="text-end pe-5">位速率</td><td class="text-start fw-light">
+          MP3: &lt;=320kbps</br>
+          WAV: &lt;=1,141kbps</br>
+          FLAC: &lt;=1,141kbps</br>
+          AAC: &lt;=320kbps</br>
+        </td></tr>
+        <tr><td scope="row" class="text-end pe-5">蓝牙</td><td class="text-start fw-light">Bluetooth V4.2 BR/EDR</br>A2DP 1.3 / AVRCP 1.4</td></tr>
+        <tr><td scope="row" class="text-end pe-5">接口类型</td><td class="text-start fw-light">Type-C(USB-C) 5V1A 仅供电</td></tr>
+        <tr><td colspan="2" class="fw-lighter" style="font-size:10px;">* 不是所有这些格式都适合通过蓝牙传输播放，请参考上述指标</td></tr>
+      </table>  
     </div>
   </main>
   <footer>
